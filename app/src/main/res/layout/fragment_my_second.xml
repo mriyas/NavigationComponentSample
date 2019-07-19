@@ -7,7 +7,14 @@
         android:layout_height="match_parent"
         tools:context=".ui.fragments.MyHomeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+            android:layout_width="256dp"
+            android:layout_height="256dp"
+            android:src="@drawable/wow"
+            app:layout_constraintBottom_toTopOf="@+id/tv_label"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+    />
     <TextView
             android:id="@+id/tv_label"
             android:layout_width="wrap_content"

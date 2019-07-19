@@ -11,7 +11,6 @@ import android.widget.Button
 import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.navigation.component.sample.MySecondFragmentArgs
 import com.navigation.component.sample.R
 import com.navigation.component.sample.data.MyParcelableDataArgs
 
