@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragments.MyHomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+            android:id="@+id/tv_label"
+            android:layout_width="wrap_content"
+            android:text="Second Screen..!"
+            android:textSize="32sp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lets_start"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+            android:text="Navigate To Next Page"
+            android:background="#00BCD4"
+            android:layout_width="wrap_content"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_label"
+            android:id="@+id/button"/>
+
+</android.support.constraint.ConstraintLayout>

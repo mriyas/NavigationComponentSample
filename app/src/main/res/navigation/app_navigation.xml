@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools" android:id="@+id/app_navigation"
+            app:startDestination="@id/myHomeFragment">
+    <fragment android:id="@+id/myHomeFragment"
+              android:name="com.navigation.component.sample.ui.fragments.MyHomeFragment"
+              android:label="fragment_my_home"
+              tools:layout="@layout/fragment_my_home">
+        <action android:id="@+id/action_myHomeFragment_to_mySecondFragment"
+                app:destination="@id/mySecondFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment android:id="@+id/mySecondFragment"
+              android:name="com.navigation.component.sample.ui.fragments.MySecondFragment"
+              android:label="fragment_my_second"
+              tools:layout="@layout/fragment_my_second">
+        <argument
+                android:name="arg2"
+                app:argType="integer"
+                android:defaultValue="2"/>
+        <argument android:name="arg3"
+                  app:argType="com.navigation.component.sample.data.MyParcelableDataArgs"
+                  app:nullable="true"/>
+        <argument
+                android:name="arg1"
+                app:argType="string"
+                android:defaultValue="default string"/>
+        <action android:id="@+id/action_mySecondFragment_to_myThirdFragment"
+                app:destination="@id/myThirdFragment"
+                app:enterAnim="@anim/slide_in_right"
+                app:exitAnim="@anim/slide_out_left"
+                app:popEnterAnim="@anim/slide_in_left"
+                app:popExitAnim="@anim/slide_out_right"/>
+
+    </fragment>
+    <fragment android:id="@+id/myThirdFragment"
+              android:name="com.navigation.component.sample.ui.fragments.MyThirdFragment"
+              android:label="fragment_my_third"
+              tools:layout="@layout/fragment_my_third">
+        <action android:id="@+id/action_myThirdFragment_to_myHomeFragment3"
+                app:popUpTo="@id/myHomeFragment"
+
+        />
+        <action android:id="@+id/action_myThirdFragment_to_mySecondFragment"
+                app:popUpTo="@id/mySecondFragment"/>
+    </fragment>
+    <fragment android:id="@+id/deepLinkFragment" android:name="com.navigation.component.sample.ui.fragments.DeepLinkFragment"
+              android:label="deeplink_fragment" tools:layout="@layout/deeplink_fragment">
+        <deepLink android:id="@+id/deepLink" app:uri="www.riyas.test.com/riyas" android:autoVerify="true"/>
+    </fragment>
+    <fragment android:id="@+id/settingsFragment"
+              android:name="com.navigation.component.sample.ui.fragments.SettingsFragment"
+              android:label="settings_fragment"
+              tools:layout="@layout/settings_fragment"
+             >
+
+    </fragment>
+</navigation>
