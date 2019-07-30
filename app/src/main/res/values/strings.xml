@@ -12,7 +12,7 @@
   ~ limitations under the License.
   -->
 <resources>
-    <string name="app_name">Navigation codelab</string>
+    <string name="app_name">Navigation Sample-MR</string>
 
     <!-- Menu strings -->
     <string name="shopping_cart">Shopping Cart</string>

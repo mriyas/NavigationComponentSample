@@ -48,15 +48,4 @@
         <action android:id="@+id/action_myThirdFragment_to_mySecondFragment"
                 app:popUpTo="@id/mySecondFragment"/>
     </fragment>
-    <fragment android:id="@+id/deepLinkFragment" android:name="com.navigation.component.sample.ui.fragments.DeepLinkFragment"
-              android:label="deeplink_fragment" tools:layout="@layout/deeplink_fragment">
-        <deepLink android:id="@+id/deepLink" app:uri="www.riyas.test.com/riyas" android:autoVerify="true"/>
-    </fragment>
-    <fragment android:id="@+id/settingsFragment"
-              android:name="com.navigation.component.sample.ui.fragments.SettingsFragment"
-              android:label="settings_fragment"
-              tools:layout="@layout/settings_fragment"
-             >
-
-    </fragment>
 </navigation>
